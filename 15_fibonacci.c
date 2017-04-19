@@ -4,18 +4,17 @@
 #include <stdio.h>
 main()
 {
-	int i, n, series;
-	printf("ENTER A NUMBER : ");
-	scanf("%d", &n);
+	int n, i, sum, f_num = 0, s_num = 1;
 
-	for (i = 0; i <= n; ++i) {
-		if (n == 1)
-			return 0;
-		else if (n == 2)
-		       return 1;
-		else {
-			series = (n-2) + (n-1);
-			printf("%d", series);
-		}
+	printf("ENTER THE NUMBER : ");
+	scanf("%d", &n);
+	printf("%d ", f_num);
+	printf("%d ", s_num);
+	for (i = 1; i < n-1; ++i) {
+		sum = f_num + s_num;
+		printf("%d ", sum);
+		f_num = s_num;
+		s_num = sum;
 	}
+	printf("\n");
 }

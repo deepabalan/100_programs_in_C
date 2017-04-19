@@ -11,13 +11,5 @@ main()
 	rem = num % 10;
 	quo = num / 10;
 	sum = rem + quo;
-
-	if (sum > 10) {
-		rem = num % 10;
-		quo = num / 10;
-		add = rem + num;
-		printf("ADD = %d\n", add);
-	}
-	else
-		printf("SUM = %d\n", sum);
+	printf("SUM = %d\n", sum);
 }
